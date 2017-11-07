@@ -1,8 +1,8 @@
-
+const INFO = {
+  valid: true
+};
 export default class Validator {
-  INFO = {
-    valid: true
-  };
+
   static email(value) {
     const REG = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
     const IS_VALID = REG.test(value);
