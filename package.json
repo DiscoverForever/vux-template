@@ -15,6 +15,7 @@
   "dependencies": {
     "element-ui": "^2.0.9",
     "fastclick": "^1.0.6",
+    "leancloud-storage": "^3.4.2",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0",
     "vuex": "^2.1.1",
