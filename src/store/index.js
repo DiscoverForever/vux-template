@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import * as actions from './actions'
 import logger from 'vuex/dist/logger'
 
 Vue.use(Vuex)
