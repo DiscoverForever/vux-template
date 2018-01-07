@@ -8,7 +8,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import router from './router';
 import App from './App';
 import store from './store';
-
+import AV from 'leancloud-storage';
+import config from 'config/app.config';
 Vue.use(ElementUI);
 
 FastClick.attach(document.body);
@@ -21,3 +22,9 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app-box');
+
+/** init leancloud sdk */
+AV.init({
+  appId: config.leancloud_app_id,
+  appKey: config.leancloud_app_key
+});
