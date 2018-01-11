@@ -28,3 +28,6 @@ AV.init({
   appId: config.leancloud_app_id,
   appKey: config.leancloud_app_key
 });
+
+/**mock login*/
+AV.User.logIn('admin', 'admin!@123');
